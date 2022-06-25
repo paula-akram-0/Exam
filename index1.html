@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css.css">
+</head>
+<body>
+    
+    <div class="leftmenu bg-black">
+        <div class="link ">
+            <a href="#" class="d-block text-decoration-none link1" results="now_playing">Now playing</a>
+            <a href="#" class="d-block text-decoration-none link2" results="popular">Popular</a>
+            <a href="#" class="d-block text-decoration-none link3" results="top_rated">Top Rated</a>
+            <a href="#" class="d-block text-decoration-none link4" id="trending" >Trending</a>
+            <a href="#" class="d-block text-decoration-none link5" results="upcoming">Upcoming</a>
+            <a href="#Contact-Us" class="d-block text-decoration-none link6" >Contact Us</a>
+        </div>
+        <div class="whiteleft bg-white">
+            <img src="./img/logo.png" width="60%"  alt="">
+            <i class="fa-solid fa-xmark" id="closeBtn"></i>
+            <i class="fa-solid fa-bars" id="openBtn"></i>
+            <div>
+            <i class="fa-solid fa-globe  p-3"></i>
+            <i class="fa-solid fa-share-nodes p-3"></i>
+            </div>
+            
+
+        </div>
+        <div class="link-icon container">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+            <p class="text-muted my-5">Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+
+    </div>
+
+    <div class="container  w-100 mb-5">
+        <div class="search-bar w-75 m-auto">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="search" placeholder="get movies by word..." class="  text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1 me-3" id="searchInput1">
+                </div>
+                <div class="col-md-6">
+                    <input type="search" placeholder="search..." class="  text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1" id="searchInput2">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container  w-100 vh-100">
+        <div class="row ms-5 " id="show">
+
+        </div>
+       
+            <div class="Contact-Us w-100" id="Contact-Us">
+                <div class="w-75 m-auto search-bar my-5">
+                    <h2 class="text-white">ContacUs...</h2>
+                    <form id="form">
+                    <div class="row">
+                        <div class="col-md-6 my-2">
+                            <input type="text" onkeyup="validation2()" class="text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1 text-white" placeholder="Enter Your Name" id="nameInput">
+                            <span class="alert-danger alert" id="text2"></span>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <input type="text" onkeyup="validation1()"  class="text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1 text-white" placeholder="Enter Your Email" id="emailInput">
+                            <span class="alert-danger alert" id="text"></span>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <input type="text" onkeyup="validation3()" class="text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1 text-white" placeholder="Enter phone" id="phoneInput">
+                            <span class="alert-danger alert" id="text3"></span>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <input type="text" onkeyup="validation4()" class="text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1 text-white" placeholder="Enter Age" id="ageInput">
+                            <span class="alert-danger alert" id="text4"></span>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <input type="password" onkeyup="verifyPassLength()" class="text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1 text-white" placeholder="Enter Password" id="passwordInput">
+                            <span class="alert-danger alert" id="text5"></span>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <input type="password" onkeyup="verifyRePassLength()" class="text-center form-control w-100 bg-transparent border border-top-0 border-end-0 border-start-0  border-bottom-1 text-white" placeholder="Enter Repassword" id="repasswordInput">
+                            <span class="alert-danger alert" id="text6"></span>
+                        </div>
+                        <div class="col-md-6 my-2">
+                            <button type="submit"  id="submit" class="btn btn-outline-danger text-danger">submit</button>
+                        </div>
+                    </div>
+                </form>
+        
+                </div>
+            </div>
+      
+    
+    </div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main2.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
